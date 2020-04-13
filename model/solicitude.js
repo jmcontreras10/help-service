@@ -20,7 +20,7 @@ class Solicitude {
     const db = getDb();
     let dbOp;
     dbOp = db.collection("solicitudes")
-      .updateOne({ }, { $set: this },{upsert:true});
+      .updateOne({ _id: this._id } , { $set: this },{upsert:true});
     return dbOp
       .then(() => {
         //Nothing to show
@@ -47,7 +47,7 @@ class Solicitude {
   delete(id){
 
     const db = getDb();
-    return db.collection("solicitudes").deleteOne({"_id":id})
+    return db.collection("solicitudes").deleteOne({"_id":id});
   }
 
   fetchFilter(user, date) {
