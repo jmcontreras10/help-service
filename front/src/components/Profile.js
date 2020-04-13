@@ -241,7 +241,7 @@ function Profile(props) {
                                                         </span>
                                                     </div>
                                                 </div>
-                                                {element.selected.id === user.email &&
+                                                {element.selected && element.selected.id === user.email &&
                                                     <div className="aler">
                                                         <img src={alert} alt="nuevo evento"></img>
                                                     </div>
