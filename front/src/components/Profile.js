@@ -151,7 +151,7 @@ function Profile(props) {
                                 <span className="detalles-label">Genero </span>
                                 <span className="detalles-text">{user.gender}</span>
                             </li>
-                            {(own || props.solicitudes.filter((ele) => ele.userid === user.email && ele.selected.id === props.user.email).length>0) &&
+                            {(own || props.solicitudes.filter((ele) => ele.userid === user.email && ele.selected && ele.selected.id === props.user.email).length>0) &&
                                 <>
                                     <li>
                                         <span className="detalles-label">Numero </span>
