@@ -37,6 +37,8 @@ npm run start
 ```
 
 ## Overview
+ 
+![alt text](https://github.com/jmcontreras10/help-service/edit/master/thumbnail.png "Logo Title Text 1")
 
 ## Credits
 Icons made by <a href="https://www.flaticon.com/authors/popcorns-arts" title="Icon Pond">Icon Pond</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>
