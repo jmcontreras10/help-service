@@ -29,8 +29,11 @@ The application runs an Express Server listening on port 3000. The data is on a 
 HTML, CSS, Javascript, MongoDB, Express Js, ReactJs, Passport.
 
 ## Install
+
+```bash
 cd help-service
 npm install
 npm run start
+```
 
 ## Overview
