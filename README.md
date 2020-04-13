@@ -41,4 +41,4 @@ npm run start
 ## Credits
 Icons made by <a href="https://www.flaticon.com/authors/popcorns-arts" title="Icon Pond">Icon Pond</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>
 Icons made by <a href="https://www.flaticon.com/authors/kiranshastry" title="Kiranshastry">Kiranshastry</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
-Icons made by < a href = "https://www.flaticon.com/authors/prosymbols" title = "Prosymbols" > Prosymbols</a > from < a href = "https://www.flaticon.com/" title = "Flaticon" > www.flaticon.com</a >
+Icons made by <a href = "https://www.flaticon.com/authors/prosymbols" title = "Prosymbols"> Prosymbols</a> from <a href = "https://www.flaticon.com/" title = "Flaticon"> www.flaticon.com</a>
