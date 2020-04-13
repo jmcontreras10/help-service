@@ -1,19 +1,20 @@
 .Home {
     .banner{
         height: 300px;
-        perspective: 1px;
-        margin-bottom: 20px;
+        margin-bottom: 40px;
+        overflow: hidden;
+        position: relative;
         &::before {
             content: "";
             position: absolute;
             left: 0;
             right: 0;
-            background: url(../assets/help2.jpeg);
+            background: url(../assets/help1.jpg);
             background-size: cover;
+            background-position: 10px;
             z-index: -1;
-            transform: translateZ(-1px) scale(2);
             height: 100%;
-            opacity: 0.7;
+            opacity: 0.8;
         }
     }
     .modal{
@@ -34,17 +35,8 @@
             }
         }
     }
-    .filter {
-        width: 200px;
-        position: sticky;
-        top: 20px;
-        float: left;
-        padding: 0 10px;
-    }
     .item-list {
-        width: calc(100% - 200px);
-        padding: 0 20px;
-        float: right;
+        padding: 0 40px;
         .item-col {
             padding-bottom: 15px;
             max-width: fit-content;

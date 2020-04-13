@@ -5,7 +5,6 @@ const passport = require("passport");
 router.post("/login",
   passport.authenticate("local", { failureRedirect: "/login" }),
   function (req, res) {
-    console.log("login");
     res.redirect("/");
   });
 
@@ -16,7 +15,6 @@ router.get("/logout",
   });
 router.get("/user",
   function(req,res){
-    console.log(req.user);
     res.json(req.user||null);
   });
 module.exports = router;

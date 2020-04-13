@@ -1,0 +1,249 @@
+.Profile {
+    .filter {
+        width: 200px;
+        position: sticky;
+        top: 20px;
+        float: left;
+        padding: 0 10px;
+    }
+    .modal-item {
+        .modal-title {
+            text-transform: capitalize;
+        }
+        .modal-imagen {
+            width: 100%;
+        }
+        .detalles ul {
+            list-style: none;
+            li {
+                padding: 5px 0;
+                .detalles-label {
+                    color: $primary;
+                    padding-right: 2px;
+                }
+            }
+        }
+        .ofertas{
+            border-left: 1px dashed grey;
+            padding: 10px 15px;
+            position: relative;
+            .offer-contain{
+                position: relative;
+                padding-bottom:10px ;
+                border-bottom: grey 1px dashed;
+                a{
+                    text-transform: capitalize;
+                }
+                button{
+                    padding: 0 5px;
+                    height: 25px;
+                    font-size: 10px;
+                    position: absolute;
+                    right: 15px;
+                    top: 0;
+                }
+            }
+        }
+    }
+    .modal-solicitud {
+        .modal-title {
+            text-transform: capitalize;
+        }
+        .modal-imagen {
+            position: relative;
+            img {
+                width: 100%;
+            }
+            input {
+                height: 100%;
+                width: 100%;
+                top: 0;
+                left: 0;
+                position: absolute;
+                opacity: 0;
+            }
+        }
+        .modal-form {
+            padding: 20px;
+            .inputBox {
+                position: relative;
+
+                input {
+                    width: 100%;
+                    height: 30px;
+                    padding: 10px 0;
+                    font-size: 16px;
+                    margin-bottom: 30px;
+                    color: #000000;
+                    border: 1px solid $primary;
+                    outline: none;
+                    background: transparent;
+                }
+
+                textarea {
+                    width: 100%;
+                    padding: 5px;
+                    font-size: 12px;
+                    margin-bottom: 30px;
+                    color: #000000;
+                    border: 1px solid $primary;
+                    outline: none;
+                    background: transparent;
+                }
+
+                label {
+                    position: absolute;
+                    left: 0;
+                    padding: 10px 0;
+                    pointer-events: none;
+                    top: -30px;
+                    left: 0;
+                    color: $primary;
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+    .listing {
+        width: calc(100% - 350px);
+        float: right;
+        padding: 50px 20px 0 0;
+        .mark-border {
+            border-right: solid 1px black;
+        }
+        .item-save {
+            max-width: 700px;
+            margin: 0;
+        }
+        .item-col {
+            padding-bottom: 15px;
+            max-width: calc(100% / 2);
+            position: relative;
+            .aler{
+                position: absolute;
+                height: 40px;
+                width: 40px;
+                top: -5px;
+                right: -5px;
+                img{
+                    position: relative;
+                    height: 100%;
+                    width: 100%;
+                }
+            }
+            .item {
+                width: 100%;
+                height: 200px;
+                left: 0;
+                overflow: hidden;
+                border-radius: 20px;
+                position: relative;
+                background: white;
+                cursor: pointer;
+                transition: 0.5s;
+                &:hover {
+                    width: 110%;
+                    height: 220px;
+                    left: -5%;
+                    img {
+                        opacity: 1;
+                    }
+                }
+                img {
+                    height: 100%;
+                    position: relative;
+                    opacity: 0.8;
+                }
+                .item-text {
+                    position: absolute;
+                    bottom: 0;
+                    width: 100%;
+                    background-color: rgba(0, 0, 0, 0.8);
+                    padding: 10px;
+                    .item-title {
+                        width: 100%;
+                        margin-bottom: 10px;
+                        text-transform: capitalize;
+                        font-size: 20px;
+                    }
+                    .item-date {
+                        position: absolute;
+                        bottom: 5px;
+                        right: 10px;
+                        font-size: 9px;
+                    }
+                }
+            }
+        }
+    }
+    .profile-info {
+        float: left;
+        width: 350px;
+        padding: 50px;
+        .profile-photo {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            overflow: hidden;
+            margin-bottom: 30px;
+            border: 1px solid $primary;
+            position: relative;
+            .photo {
+                width: 100%;
+                height: 100%;
+            }
+            .edit {
+                opacity: 0;
+                overflow: hidden;
+                background-color: rgba(0, 0, 0, 0.5);
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                transition: 0.2s;
+                img {
+                    height: 30%;
+                    width: 30%;
+                }
+                input {
+                    height: 100%;
+                    width: 100%;
+                    top: 0;
+                    left: 0;
+                    position: absolute;
+                    opacity: 0;
+                }
+                &:hover {
+                    opacity: 1;
+                }
+            }
+        }
+        .profile-data {
+            margin: 30px 0;
+            padding: 10px 0;
+            border-radius: 15px;
+            background-color: white;
+            border: 1px solid $primary;
+            ul {
+                list-style: none;
+                li {
+                    padding: 15px 0;
+                    position: relative;
+                    .detalles-label {
+                        position: absolute;
+                        top: -12px;
+                        left: -5px;
+                        color: $primary;
+                        font-size: 12px;
+                        padding: 10px 0;
+                        pointer-events: none;
+                    }
+                    .detalles-text {
+                        padding-left: 5px;
+                    }
+                }
+            }
+        }
+    }
+}

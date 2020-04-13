@@ -1,18 +1,16 @@
-var express = require('express');
+var express = require("express");
 var router = express.Router();
 
-const sc = require('../controller/solicitude');
+const sc = require("../controller/solicitude");
 
 /* POST: Add a new Solicitude */
-router.post('/add', sc.postAddSolicitude);
+router.post("/add", sc.postAddSolicitude);
 
 /* GET: get all Solicitudes */
-router.get('/list', sc.getAllSolicitudes);
+router.get("/list", sc.getAllSolicitudes);
 
 /* POST: Get a set of Solicitudes by filter */
-router.post('/get', sc.getSolicitudesByFilter);
+router.post("/get", sc.getSolicitudesByFilter);
 
-/* POST: Modify User info */
-router.post('/update', sc.modifySolicitudeById);
 
 module.exports = router;
