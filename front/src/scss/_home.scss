@@ -1,0 +1,94 @@
+.Home {
+    .banner{
+        height: 300px;
+        perspective: 1px;
+        margin-bottom: 20px;
+        &::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            right: 0;
+            background: url(../assets/help2.jpeg);
+            background-size: cover;
+            z-index: -1;
+            transform: translateZ(-1px) scale(2);
+            height: 100%;
+            opacity: 0.7;
+        }
+    }
+    .modal{
+        .modal-title{
+            text-transform: capitalize;
+        }
+        .modal-imagen{
+            width: 100%;
+        }
+        .detalles ul{
+            list-style: none;
+            li{
+                padding: 5px 0;
+                .detalles-label{
+                    color:$primary;
+                    padding-right: 2px;
+                }
+            }
+        }
+    }
+    .filter {
+        width: 200px;
+        position: sticky;
+        top: 20px;
+        float: left;
+        padding: 0 10px;
+    }
+    .item-list {
+        width: calc(100% - 200px);
+        padding: 0 20px;
+        float: right;
+        .item-col {
+            padding-bottom: 15px;
+            max-width: fit-content;
+            .item {
+                width: 250px;
+                height: 250px;
+                overflow: hidden;
+                border-radius: 20px;
+                position: relative;
+                background: white;
+                cursor: pointer;
+                transition: .5s;
+                &:hover{
+                    width: 270px;
+                    height: 270px;
+                    img{
+                        opacity: 1;
+                    }
+                }
+                img {
+                    height: 100%;
+                    position: relative;
+                    opacity: 0.8;
+                }
+                .item-text {
+                    position: absolute;
+                    bottom: 0;
+                    width: 100%;
+                    background-color: rgba(0, 0, 0, 0.8);
+                    padding: 10px;
+                    .item-title {
+                        width: 100%;
+                        margin-bottom: 10px;
+                        text-transform: capitalize;
+                        font-size: 20px;
+                    }
+                    .item-date {
+                        position: absolute;
+                        bottom: 5px;
+                        right: 10px;
+                        font-size: 9px;
+                    }
+                }
+            }
+        }
+    }
+}

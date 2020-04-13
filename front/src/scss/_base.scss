@@ -1,0 +1,18 @@
+.navbar {
+    z-index: 10;
+    height: 60px;
+    .logo {
+        img {
+            height: calc(60px - 16px);
+        }
+    }
+    .profile {
+        height: calc(60px - 16px);
+    }
+    & + .wrapper {
+        height: calc(100vh - 60px);
+        overflow-y: scroll;
+        overflow-x: hidden;
+        background-color: rgba(246, 246, 246, 0.6) ;
+    }
+}

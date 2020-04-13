@@ -1,0 +1,98 @@
+@mixin btn-styles($btn-color, $btn-contrast, $btn-tint, $btn-shade) {
+  background-color: $btn-color;
+  color: $btn-contrast;
+  border-color: $btn-color;
+
+  &:hover,
+  &:focus,
+  &:not(:disabled):not(.disabled):active,
+  &:not(:disabled):not(.disabled).active,
+  &:not(:disabled):not(.disabled):active:focus,
+  &:not(:disabled):not(.disabled).active:focus,
+  &:active:hover,
+  &.active:hover,
+  .show > &.dropdown-toggle,
+  .show > &.dropdown-toggle:focus,
+  .show > &.dropdown-toggle:hover {
+    background-color: $btn-tint;
+    border-color: $btn-tint;
+    color: $btn-contrast;
+    box-shadow: none;
+  }
+
+  &:not([data-action]):hover {
+    box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.17);
+  }
+
+  &.disabled,
+  &:disabled,
+  &[disabled],
+  fieldset[disabled] & {
+    &,
+    &:hover,
+    &:focus,
+    &.focus,
+    &:active,
+    &.active {
+      background-color: $btn-shade;
+      border-color: $btn-shade;
+    }
+  }
+
+  &.btn-simple {
+    color: $btn-color;
+    border-color: $btn-color;
+    &:hover,
+    &:focus,
+    &:active {
+      background-color: transparent;
+      color: $btn-tint;
+      border-color: $btn-tint;
+      box-shadow: none;
+    }
+  }
+
+
+  &.btn-link {
+    color: $btn-color;
+    background: none;
+    border: none;
+    &:hover,
+    &:focus,
+    &:active {
+      background-color: transparent;
+      color: $btn-tint;
+      text-decoration: none;
+      box-shadow: none;
+    }
+  }
+
+}
+
+.btn-primary {
+  @include btn-styles($primary, $primary-contrast, $primary-tint, $primary-shade);
+}
+.btn-secondary {
+  @include btn-styles($secondary, $secondary-contrast, $secondary-tint, $secondary-shade);
+}
+.btn-tertiary {
+  @include btn-styles($tertiary, $tertiary-contrast, $tertiary-tint, $tertiary-shade);
+}
+.btn-warning {
+  @include btn-styles($warning, $warning-contrast, $warning-tint, $warning-shade);
+}
+.btn-dark {
+  @include btn-styles($dark, $dark-contrast, $dark-tint, $dark-shade);
+}
+.btn-medium {
+  @include btn-styles($medium, $medium-contrast, $medium-tint, $medium-shade);
+}
+.btn-success {
+  @include btn-styles($success, $success-contrast, $success-tint, $success-shade);
+}
+.btn-danger {
+  @include btn-styles($danger, $danger-contrast, $danger-tint, $danger-shade);
+}
+.btn-light {
+  @include btn-styles($light, $light-contrast, $light-tint, $light-shade);
+}
