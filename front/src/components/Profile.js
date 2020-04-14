@@ -9,7 +9,7 @@ import alert from "../assets/icons/new.svg"
 
 function Profile(props) {
     const [reports, setReports]=useState([]);
-    const [fotoCargada, setFoto] = useState(null);
+    const [fotoCargada, setFoto] = useState(null); //photo setPhoto
     const [selected, setSelected] = useState({});
     const [user, setUser] = useState(props.user);
     const [own, setOwn] = useState(true);
@@ -18,7 +18,7 @@ function Profile(props) {
     const formSolicitud = useRef();
     const { id } = useParams();
     const date = new Date().getTime();
-
+    //Buen uso de hooks como useState / useEffect y demas pero de nuevo se combina español con ingles 
     useEffect(() => {
         setUser(props.user);
         if (id && id !== props.user.email) {
