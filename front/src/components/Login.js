@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
 function Login() {
     const [registered, setRegistered] = useState(true);
-    if (registered) {
+    if (registered) { // si siempre se inisializa en true no veo necesario este if ademas si fuera necesario es mejor realizareste if dentro del return con un operador ternario 
         return (
+            // registered ? <div/> : <div/>
             <div className="wrapper vh-100 Login">
                 <div className="box centrado">
                     <p className="title">Iniciar Sesión</p>
