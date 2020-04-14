@@ -1,6 +1,6 @@
 "use strict";
 const getDb = require("../util/dbManager").getDb;
-
+//Nombrar mejor las variables / clases / modulos / etc es una buena practica para tener codigo limpio ademas de no mezaclar ingles con español
 class Solicitude {
 
   constructor(userid, userName, date, description, title, solved, image, selected, offers) {  
